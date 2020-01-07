@@ -1,0 +1,26 @@
+//variables
+@bgColor: #ffffff;
+@bgShade: linear-gradient(180deg, #ffffff 0%, #868686 100%);
+
+//mixins
+.center(@just, @align) {
+  display: flex;
+  justify-content: @just;
+  align-items: @align;
+}
+
+.push(@marginTop, @marginBot) {
+  margin-top: @marginTop;
+  margin-bottom: @marginBot;
+}
+
+.button(@btnColor, @rounded) {
+  border: 1px solid white;
+  background: @btnColor;
+  padding: 4px 15px;
+  border-radius: @rounded;
+
+  &:hover {
+    background-color: lighten(@btnColor, 20%);
+  }
+}
