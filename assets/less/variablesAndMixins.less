@@ -1,0 +1,35 @@
+//variables
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Assistant|Courgette&display=swap");
+
+@bgColor: #ffffff;
+@bgShade: linear-gradient(180deg, #ffffff 25%, #373737 100%);
+
+@fontHeroText: "Courgette", cursive;
+@fontH2: "Archivo Black", sans-serif;
+@fontPText: "Assistant", sans-serif;
+
+@tablet: ~"(max-width: 1000px)";
+@phone: ~"(max-width: 500px)";
+
+//mixins
+.center(@just, @align) {
+  display: flex;
+  justify-content: @just;
+  align-items: @align;
+}
+
+.push(@marginTop, @marginBot) {
+  margin-top: @marginTop;
+  margin-bottom: @marginBot;
+}
+
+.button(@btnColor, @rounded) {
+  border: 1px solid white;
+  background: @btnColor;
+  padding: 4px 15px;
+  border-radius: @rounded;
+
+  &:hover {
+    background-color: lighten(@btnColor, 20%);
+  }
+}

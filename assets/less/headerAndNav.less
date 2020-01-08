@@ -1,0 +1,65 @@
+//header and nav
+header {
+  .center(space-between, center);
+  background: black;
+  padding: 0% 2%;
+
+  @media @tablet {
+    flex-direction: column;
+  }
+
+  .logo {
+    h1 {
+      color: white;
+    }
+  }
+  .links{
+    .center(space-around, none);
+    
+    @media @tablet {
+      flex-direction: column;
+      margin-bottom:5%;
+    }
+  }
+}
+
+nav {
+  
+  width: 750px;
+  @media @tablet {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  a {
+    font-size:4.5rem;
+    
+    color: white;
+    text-decoration: none;
+
+    @media @tablet {
+      .push(1%, 1%);
+      width: 100%;
+      border-top: 1px solid white;
+    }
+  }
+}
+
+.loginLink {
+  @media @tablet {
+    width:50%;
+   margin-left:25%;
+  }
+  .button(green, 4.5px);
+  
+  @media @phone {
+    .push(2%, 2%);
+    width:;
+    text-align: center;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
