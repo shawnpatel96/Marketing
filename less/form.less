@@ -1,7 +1,13 @@
 // Let Us help you form
 .big-wrapper{
-    
+    @media @phone{
+        display:flex;
+        flex-direction: column;
+        width:250%;
+        
+     }
     display:flex;
+    
     margin-top: 10%;
     .wrapper{
        
@@ -10,7 +16,7 @@
        
     }
     .help-text{
-        
+       
         height: 50vh;
         margin: 0% 10%;
         width: 49%;
@@ -36,17 +42,20 @@
 
 
 .contact-form{
-    max-width: 750px;
+    max-width:550px;
+  
     margin-right:100px;
     padding: 30px;
     border-radius: 5px;
     background-color:black;
     display:flex;
+   
     box-shadow: 0 0 100px rgba(13, 190, 0, 0.986);
 }
 .input-fields{
     display:flex;
     flex-direction: column;
+    
     margin-right: 4%;
 }
 .input-fields,
